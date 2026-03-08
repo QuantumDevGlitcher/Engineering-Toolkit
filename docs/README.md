@@ -15,4 +15,4 @@ This folder contains project documentation.
 - Record significant decisions as ADRs under `architecture/adr/`.
 
 ## Start here
-- Guide 101: `governance/engineering-toolkit-guide-101.md`
+**Guide 101: `governance/engineering-toolkit-guide-101.md`**

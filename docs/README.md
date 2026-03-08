@@ -13,3 +13,6 @@ This folder contains project documentation.
 - Keep docs actionable and easy to scan.
 - Update docs when behavior or architecture changes.
 - Record significant decisions as ADRs under `architecture/adr/`.
+
+## Start here
+- Guide 101: `governance/engineering-toolkit-guide-101.md`

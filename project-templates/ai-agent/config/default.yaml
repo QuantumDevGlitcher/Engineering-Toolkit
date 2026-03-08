@@ -1,0 +1,14 @@
+app:
+  name: "ai-agent"
+  env: "development"
+
+logging:
+  level: "info"
+
+tools:
+  allowlist:
+    - "calculator"
+    - "search"
+
+evaluation:
+  dataset_default: "eval/datasets/smoke.jsonl"

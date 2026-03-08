@@ -1,0 +1,91 @@
+name: "🐛 Bug Report"
+description: "Report a bug or unexpected behavior"
+title: "[BUG] "
+labels: ["kind/bug", "priority/medium"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the bug clearly and concisely.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How bad is the impact?
+      options:
+        - critical (crash/data loss/security)
+        - high (major feature broken)
+        - medium (partial degradation)
+        - low (minor issue)
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the issue.
+      placeholder: |
+        1. Step
+        2. Step
+        3. Step
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define what must be true for this bug to be considered fixed.
+      placeholder: |
+        - Condition 1
+        - Condition 2
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: areas
+    attributes:
+      label: Areas affected (optional)
+      description: Select all that apply.
+      options:
+        - label: area/core
+        - label: area/api
+        - label: area/ui
+        - label: area/infra
+        - label: area/testing
+        - label: area/docs
+        - label: area/research
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: Attach logs or screenshots if relevant.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, app version, branch, commit, etc.
+      placeholder: "OS: Windows 11 | Version: 1.2.3 | Branch: fix/... | Commit: abc123"

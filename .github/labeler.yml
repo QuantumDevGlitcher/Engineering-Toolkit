@@ -1,0 +1,39 @@
+# Add 
+area/docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "docs/**"
+          - "Documentation/**"
+          - "**/*.md"
+
+area/api:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/api/**"
+          - "api/**"
+
+area/ui:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/ui/**"
+          - "ui/**"
+
+area/testing:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "tests/**"
+
+area/infra:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/**"
+          - "scripts/**"
+          - "infra/**"
+          - "docker/**"
+
+area/core:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/**"
+          - "core/**"
+          - "lib/**"

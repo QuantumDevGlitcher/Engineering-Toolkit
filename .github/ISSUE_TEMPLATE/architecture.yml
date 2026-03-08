@@ -1,0 +1,61 @@
+name: "🏛️ Architecture Proposal"
+description: "Propose a significant architectural change"
+title: "[ARCH] "
+labels: ["kind/architecture"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: High-level description of the proposed change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this change needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Goals
+      description: What should this change achieve?
+
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What is explicitly out of scope?
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Proposed Design
+      description: Architecture diagrams, data flow, components, trade-offs.
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define what must be true for this change to be considered complete.
+      placeholder: |
+        - Condition 1
+        - Condition 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Mitigations (optional)
+      description: What could go wrong and how will we reduce risk?
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Breaking changes, migration steps, risks.

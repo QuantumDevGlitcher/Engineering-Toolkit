@@ -1,0 +1,2 @@
+{"id":"math-1","input":"2+2","expected_contains":["2"]}
+{"id":"sum-1","input":"sum these: 1,2,3","expected_contains":["1","2","3"]}

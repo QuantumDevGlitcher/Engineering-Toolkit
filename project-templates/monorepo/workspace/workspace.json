@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "projects": {
+    "backend": "apps/backend",
+    "frontend": "apps/frontend",
+    "cli": "apps/cli",
+    "shared-lib": "packages/shared-lib",
+    "utils": "packages/utils"
+  }
+}

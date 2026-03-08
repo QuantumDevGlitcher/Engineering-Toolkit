@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Optional: run tests (only if stack tools exist; relies on your scripts)
+      - name: Run tests (optional)
+        run: bash scripts/run-tests.sh
+
+      - name: Collect artifacts (if present)
+        run: |
+          mkdir -p release_artifacts
+          [ -d dist ] && cp -r dist release_artifacts/ || true
+          [ -d build ] && cp -r build release_artifacts/ || true
+          [ -d out ] && cp -r out release_artifacts/ || true
+          [ -d target/release ] && cp -r target/release release_artifacts/rust-release || true
+          [ -d site ] && cp -r site release_artifacts/docs-site || true
+          echo "Artifacts collected."
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: release_artifacts/**/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

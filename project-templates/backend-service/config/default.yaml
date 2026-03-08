@@ -1,0 +1,7 @@
+# Default config (do not commit real secrets)`
+app:
+  name: "service-name"
+  port: 8080
+
+logging:
+  level: "info"

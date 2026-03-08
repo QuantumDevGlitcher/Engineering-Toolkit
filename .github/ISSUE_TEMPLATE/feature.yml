@@ -1,0 +1,67 @@
+name: "🚀 Feature Request"
+description: "Propose a new feature or enhancement"
+title: "[FEATURE] "
+labels: ["kind/feature"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the feature and why it matters.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to Solve
+      description: What problem does this feature address?
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Goals
+      description: What should this feature achieve?
+
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What is explicitly out of scope?
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution at a high level.
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define what must be true for this feature to be considered complete.
+      placeholder: |
+        - Condition 1
+        - Condition 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Modules affected, risks, breaking changes.
+
+  - type: checkboxes
+    id: areas
+    attributes:
+      label: Areas affected (optional)
+      description: Select all that apply.
+      options:
+        - label: area/core
+        - label: area/api
+        - label: area/ui
+        - label: area/infra
+        - label: area/testing
+        - label: area/docs
+        - label: area/research

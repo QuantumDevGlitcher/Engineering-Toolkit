@@ -1,0 +1,9 @@
+workspace:
+  apps: apps/
+  js:
+    packages: packages/
+  rust:
+    crates: crates/
+  python:
+    packages: python/
+  shared: shared/

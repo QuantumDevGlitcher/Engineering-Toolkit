@@ -1,0 +1,10 @@
+> Replace `@your-org/...` with your GitHub user/org handles.
+
+# Default ownership
+* @QuantumDevGlitcher
+
+# Documentation
+docs/** @QuantumDevGlitcher
+
+# Architecture
+docs/architecture/** @QuantumDevGlitcher

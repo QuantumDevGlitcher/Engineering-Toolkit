@@ -1,0 +1,82 @@
+- name: kind/feature
+  description: "New feature"
+  color: "4CAF50"
+- name: kind/bug
+  description: "Bug fix"
+  color: "F44336"
+- name: kind/docs
+  description: "Documentation work"
+  color: "2196F3"
+- name: kind/refactor
+  description: "Internal code improvement"
+  color: "9C27B0"
+- name: kind/chore
+  description: "Maintenance or tooling"
+  color: "607D8B"
+- name: kind/research
+  description: "Research task"
+  color: "795548"
+- name: kind/architecture
+  description: "Architecture-level change"
+  color: "FF9800"
+
+- name: area/core
+  description: "Core logic"
+  color: "3F51B5"
+- name: area/api
+  description: "API layer"
+  color: "00BCD4"
+- name: area/ui
+  description: "UI layer"
+  color: "E91E63"
+- name: area/infra
+  description: "Infrastructure, CI/CD, scripts"
+  color: "009688"
+- name: area/testing
+  description: "Tests and QA"
+  color: "8BC34A"
+- name: area/docs
+  description: "Documentation"
+  color: "03A9F4"
+- name: area/research
+  description: "Research"
+  color: "FF5722"
+
+- name: priority/high
+  description: "High priority"
+  color: "D32F2F"
+- name: priority/medium
+  description: "Medium priority"
+  color: "FFA000"
+- name: priority/low
+  description: "Low priority"
+  color: "388E3C"
+
+- name: status/wip
+  description: "Work in progress"
+  color: "0288D1"
+- name: status/ready
+  description: "Ready for work"
+  color: "7CB342"
+- name: status/blocked
+  description: "Blocked"
+  color: "C62828"
+- name: status/needs-review
+  description: "Needs review"
+  color: "512DA8"
+- name: status/needs-info
+  description: "Needs more information"
+  color: "455A64"
+
+- name: size/small
+  description: "Small change"
+  color: "AED581"
+- name: size/medium
+  description: "Medium change"
+  color: "FFCC80"
+- name: size/large
+  description: "Large change"
+  color: "FFAB91"
+- name: size/xlarge
+  description: "Extra large change"
+  color: "F48FB1"

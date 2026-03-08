@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "monorepo"
+version = "0.1.0"
+description = "Monorepo workspace"
+authors = ["Your Name <you@example.com>"]
+packages = [
+  { include = "python/*" }
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"

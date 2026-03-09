@@ -18,7 +18,7 @@ jobs:
       # ---- Python (only if detected)
       - name: Set up Python
         if: ${{ hashFiles('requirements.txt', 'pyproject.toml') != '' }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.x"
           cache: "pip"
@@ -74,7 +74,7 @@ jobs:
       # ---- Python
       - name: Set up Python
         if: ${{ hashFiles('requirements.txt', 'pyproject.toml') != '' }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.x"
           cache: "pip"

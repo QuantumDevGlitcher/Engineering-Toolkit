@@ -49,7 +49,7 @@ jobs:
       # ---- Go (only if detected)
       - name: Set up Go
         if: ${{ hashFiles('go.mod') != '' }}
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "stable"
           cache: true
@@ -112,7 +112,7 @@ jobs:
       # ---- Go
       - name: Set up Go
         if: ${{ hashFiles('go.mod') != '' }}
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "stable"
           cache: true
